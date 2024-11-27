@@ -57,7 +57,7 @@ def predict_class(request: TextRequest):
     except Exception as e:
         return {"erreur": str(e)}
 
-# **4. Endpoint pour afficher un message de base**
+# **4. Endpoint de base pour vérifier l'état de l'API**
 @app.get("/")
 def root():
-    return {"message": "API de classification textuelle est en ligne et fonctionnelle !"}
+    return {"message": "API de classification textuelle en ligne et fonctionnelle."}
